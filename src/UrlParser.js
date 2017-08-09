@@ -79,7 +79,7 @@ var UrlParser = (function() {
 					var _queryVariables = _urlParts.query.split('&');
 					for (var i = 0; i < _queryVariables.length; i++) {
 						var _variablePair = _queryVariables[i].split('=');
-						if (_variablePair.length > 2)
+						if (_variablePair.length < 2)
 							_variablePair.push('');
 						_urlParts.queryVariables[_variablePair[0]] = decodeURIComponent(_variablePair[1]);
 					}
