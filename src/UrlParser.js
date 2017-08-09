@@ -105,9 +105,6 @@ var UrlParser = (function() {
 			if (_parts.scheme != '') {
 				_parts.scheme = _parts.scheme + '://';
 			}
-			if ((_parts.domain != '' || _parts.host != '') && _parts.scheme == '') {
-				_parts.scheme = '//';
-			}
 			if (_parts.host == '') {
 				if (_parts.subdomain != '' && _parts.domain != '') {
 					_parts.host = _parts.subdomain + '.' + _parts.domain;
