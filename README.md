@@ -64,7 +64,7 @@ var _urlParts2 = UrlParser.parse('https://downloads.examplewebsite.com/pudge330/
 //      ,'UrlParserJS'
 //    ]
 //    ,queryVariables: [
-//      type: zip
+//      type: 'zip'
 //    ]
 //  }
 ```
