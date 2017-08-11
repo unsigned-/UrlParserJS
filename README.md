@@ -69,7 +69,7 @@ var _urlParts2 = UrlParser.parse('https://downloads.examplewebsite.com/pudge330/
 //  }
 ```
 
-Build a url from a object returned by `parse`
+Build a url from a object returned by `parse`.
 
 ```javascript
 var _url = UrlParser.parse(_urlParts);
