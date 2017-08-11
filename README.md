@@ -29,7 +29,7 @@ var _urlParts = UrlParser.parse('https://github.com/pudge330/UrlParserJS');
 //    ,username: ''
 //    ,password: ''
 //    ,subdomain: ''
-//    ,domain: ''
+//    ,domain: 'github.com'
 //    ,host: 'github.com'
 //    ,port: ''
 //    ,path: '/pudge330/UrlParserJS'
@@ -42,6 +42,31 @@ var _urlParts = UrlParser.parse('https://github.com/pudge330/UrlParserJS');
 //    ]
 //    ,queryVariables: ''
 //  }
+
+var _urlParts2 = UrlParser.parse('https://downloads.examplewebsite.com/pudge330/UrlParserJS?type=zip');
+
+//--parts object
+//  {
+//    url: 'https://downloads.examplewebsite.com/pudge330/UrlParserJS?type=zip'
+//    ,scheme: 'https'
+//    ,username: ''
+//    ,password: ''
+//    ,subdomain: 'downloads'
+//    ,domain: 'examplewebsite.com'
+//    ,host: 'downloads.examplewebsite.com'
+//    ,port: ''
+//    ,path: '/pudge330/UrlParserJS'
+//    ,query: 'type=zip'
+//    ,fragment: ''
+//    ,queryString: '/pudge330/UrlParserJS?type=zip'
+//    ,pathParts: [
+//      'pudge330'
+//      ,'UrlParserJS'
+//    ]
+//    ,queryVariables: [
+//      type: zip
+//    ]
+//  }
 ```
 
 Build a url from a object returned by `parse`
@@ -51,6 +76,11 @@ var _url = UrlParser.parse(_urlParts);
 
 //--url
 //--https://github.com/pudge330/UrlParserJS
+
+var _url = UrlParser.parse(_urlParts2);
+
+//--url
+//--https://downloads.examplewebsite.com/pudge330/UrlParserJS?type=zip
 ```
 
 ## Functions
