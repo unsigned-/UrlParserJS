@@ -84,3 +84,9 @@ var _url2 = UrlParser.parse(_urlParts2);
 ```
 
 ## Functions
+
+**parse(_url)** - Parses a url
+  * ___url__ - *string* - The url to parse
+
+**addRoute(_parts)** - Build url out of a `parts` object
+  * ___parts__ - *object* - The `parts` object
