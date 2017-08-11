@@ -77,9 +77,9 @@ var _url = UrlParser.parse(_urlParts);
 //--url
 //--https://github.com/pudge330/UrlParserJS
 
-var _url = UrlParser.parse(_urlParts2);
+var _url2 = UrlParser.parse(_urlParts2);
 
-//--url
+//--url2
 //--https://downloads.examplewebsite.com/pudge330/UrlParserJS?type=zip
 ```
 
