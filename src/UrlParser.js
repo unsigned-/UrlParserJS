@@ -2,7 +2,8 @@ var UrlParser = (function() {
 	var __this = {
 		regexes: {
 			scheme: /^([a-zA-Z0-9]+):\/\/|^\/\//
-			,username_password: /^([a-zA-Z0-9_\-\.]+)?:([a-zA-Z0-9_\-\.]+)?@/
+			/* ,username_password: /^([a-zA-Z0-9_\-\.\+=%~·]+)?:?([a-zA-Z0-9_\-\.\+=%~·]+)?@/ */
+			,username_password: /^([^@:#\/\?]+)?:?([^@#\/\?]+)?@/
 			,host: /^((?:(?:[a-zA-Z0-9_\-]+)\.)+(?:[a-zA-Z0-9_\-]+){1})/
 			,port: /^(?::([0-9]+))/
 			,path: /^((?!\/\/)(?:\/|\.\/|\.\.\/)(?:[^?#]+)?)/
